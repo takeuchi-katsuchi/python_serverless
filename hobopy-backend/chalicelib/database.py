@@ -57,9 +57,21 @@ def update_todo(todo_id, changes):
                 Key={
                     'id': todo_id,
                 },
-                UpdateExpression = 'set  ' + ','.join(update_expression),
+                UpdateExpression = 'set' + ','.join(update_expression),
                 ExpressionAttributeValues=expression_attribute_values,
                 ReturnValues ='ALL_NEW'
             )
             return result['Attributes']
 
+# 指定されたIDのtodoを更新する
+def delete_todo(todo_id):
+    table = _get_database().Table(os.environ['DB_TABLE_NAME'])
+
+    # DynamoDBのデータを削除する
+    result = table.delete_item(
+        Key={
+            'id': todo_id,
+        },
+        ReturnValues = 'ALL_OLD'
+    )
+    return result['Attributes']

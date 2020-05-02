@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02293c4e-75f3-444e-9aaa-2d37c8a21541" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hobopy-backend/.chalice/policy-prod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hobopy_frontend/const.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hobopy_frontend/hobopy-frontend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hobopy_frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hobopy_frontend/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hobopy_frontend/presenter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hobopy_frontend/view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hobopy-backend/.chalice/deployed/dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/hobopy-backend/.chalice/deployed/dev.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hobopy-backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobopy-backend/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hobopy-backend/chalicelib/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobopy-backend/chalicelib/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hobopy-backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hobopy-backend/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +24,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bFisEmaJM9IfYQCtGMd7ZsDCM3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -38,13 +51,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1451" y="116" key="SettingsEditor" timestamp="1588250593188">
+    <state x="-1451" y="116" key="SettingsEditor" timestamp="1588352937849">
       <screen x="-1920" y="-51" width="1920" height="1057" />
     </state>
-    <state x="-1451" y="116" key="SettingsEditor/0.23.1440.877/-1920.-51.1920.1057@-1920.-51.1920.1057" timestamp="1588250593188" />
-    <state x="-1300" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1588341996628">
+    <state x="-1451" y="116" key="SettingsEditor/0.23.1440.877/-1920.-51.1920.1057@-1920.-51.1920.1057" timestamp="1588352937849" />
+    <state x="-1300" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1588396212055">
       <screen x="-1920" y="-51" width="1920" height="1057" />
     </state>
-    <state x="-1300" y="310" key="com.intellij.ide.util.TipDialog/0.23.1440.877/-1920.-51.1920.1057@-1920.-51.1920.1057" timestamp="1588341996628" />
+    <state x="-1300" y="310" key="com.intellij.ide.util.TipDialog/0.23.1440.877/-1920.-51.1920.1057@-1920.-51.1920.1057" timestamp="1588396212055" />
+    <state x="-1331" y="113" width="841" height="729" key="find.popup" timestamp="1588410577062">
+      <screen x="-1920" y="-51" width="1920" height="1057" />
+    </state>
+    <state x="-1331" y="113" width="841" height="729" key="find.popup/0.23.1440.877/-1920.-51.1920.1057@-1920.-51.1920.1057" timestamp="1588410577062" />
   </component>
 </project>
