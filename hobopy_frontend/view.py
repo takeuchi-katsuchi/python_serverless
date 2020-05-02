@@ -25,3 +25,24 @@ class View:
                 </td>
             </tr>
         """
+
+    # 新規登録のモーダルダイアログを表示する
+    def show_new_modal(self):
+        S('#modal-title').text('新規登録')
+        S('#modal-todo-id').val('')
+        S('#modal-todo-title').val('')
+        S('#modal-todo-memo').val('')
+        S('#modal-todo-priority').val(1)
+
+    # モーダルダイアログを閉じる
+    def close_modal(self):
+        S('#input-form').modal('hide')
+
+    # モーダルのダイアログの入力内容を習得する
+    def get_input_data(self):
+        return {
+            'id': S('#modal-todo-id').val(''),
+            'title': S('#modal-todo-title').val(''),
+            'memo': S('#modal-todo-memo').val(''),
+            'priority': S('#modal-todo-priority').val(),
+        }

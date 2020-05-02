@@ -33,3 +33,21 @@ class Model:
     def _success_load_all_todos(self, data):
         self._todos = data
         S('body').trigger('todos-updated')
+
+    # Todo登録のAPI1を呼び出す
+    def create_todo(self, data):
+        S.ajax({
+            'url': f"{BASE_URL}todos",
+            'type': 'POST',
+            'contentType': 'application/json',
+            'data': JSON.stringify(data),
+        }).done(
+            self._success_create_todo
+        ).fail(
+            lambda d: alert('サーバーとの通信に失敗しました。')
+        )
+
+    # create_todo()成功時の処理
+    def _success_create_todo(self, data):
+        self._todos.append(data)
+        S('body').trigger('todos-updates')
