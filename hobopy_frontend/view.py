@@ -46,3 +46,11 @@ class View:
             'memo': S('#modal-todo-memo').val(''),
             'priority': S('#modal-todo-priority').val(),
         }
+
+    # 変更のモーダルダイアログを表示する
+    def show_update_modal(self, todo):
+        S('#modal-title').text('変更')
+        S('#modal-todo-id').val(todo['id'])
+        S('#modal-todo-title').val(todo['title'])
+        S('#modal-todo-memo').val(todo['memo'])
+        S('#modal-todo-priority').val(todo['priority'])

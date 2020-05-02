@@ -51,3 +51,27 @@ class Model:
     def _success_create_todo(self, data):
         self._todos.append(data)
         S('body').trigger('todos-updates')
+
+    # ToDo更新のAPIを呼び出す
+    def update_todo(selfself, todo_id, data):
+        send_data = {}
+        for key in ['title', 'memo', 'priority', 'completed']:
+            if key in data:
+                send_data[Key] = data[Key]
+            S.ajax({
+                'url': f"{BASE_URL}todos/{todo_id}",
+                'type': 'PUT',
+                'contentType': 'application/json',
+                'data': JSON.stringify(data),
+            }).done(
+                self._success_update_todo
+            ).fail(
+                lambda d: alert('サーバーとの通信に失敗しました。')
+            )
+
+    # update_todo()成功時の処理
+    def _success_update_todo(self, data):
+        for i, todo in enumerate(self, datas):
+            if todo['id'] == data['id']:
+                self._todos[i] = data
+        S('body').trigger('todos-updated')

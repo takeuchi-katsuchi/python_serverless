@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="02293c4e-75f3-444e-9aaa-2d37c8a21541" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobopy_frontend/__target__/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/hobopy_frontend/__target__/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobopy_frontend/__target__/presenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/hobopy_frontend/__target__/presenter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobopy_frontend/__target__/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/hobopy_frontend/__target__/view.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hobopy_frontend/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobopy_frontend/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hobopy_frontend/presenter.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobopy_frontend/presenter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hobopy_frontend/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobopy_frontend/view.py" afterDir="false" />
