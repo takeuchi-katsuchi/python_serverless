@@ -75,3 +75,8 @@ class Model:
             if todo['id'] == data['id']:
                 self._todos[i] = data
         S('body').trigger('todos-updated')
+
+    # 完了状態を反転する
+    def toggle_todo(self, todo_id):
+        todo = self.get_todo(todo_id)
+        self.update_todo(todo_id, {'completed': not todo['completed']})

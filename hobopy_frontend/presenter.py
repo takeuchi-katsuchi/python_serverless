@@ -15,6 +15,7 @@ class Presenter:
         S('body').on('todos-updated', self._on_todos_updated)
         S('#input-form').on('show.bs.model', self._on_show_modal)
         S("#register-button").on('click', self._on_click_register)
+        S('#todo-list').on('click', '.toggle-checkbox', self._on_click_checkbox)
 
     # 初期表示処理
     def start(self):
@@ -42,5 +43,12 @@ class Presenter:
         else:
             self._model.create_todo(input_data)
         self._view.close_modal()
+
+    # toggle-checkboxのclick受診時の処理
+    def _on_click_checkbox(self, event):
+        target_id = S(event.target).attr('id')
+        if target_id.startswith('check-'):
+            todo_id = target_id[6:]
+            self._model.toggle_todo(todo_id)
 
 
